@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule } from "@angular/http"
+import { HttpModule } from '@angular/http';
 
 //Rutas
 
-import { app_routing } from "./app.routes";
+import { app_routing } from './app.routes';
 
 //Servicios
-import { InformacionService } from "./services/informacion.service";
+import { InformacionService } from './services/informacion.service';
+import { ProductosService } from './services/productos.service';
 
 //componentes
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ItemsComponent } from './components/items/items.component';
+
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { ItemsComponent } from './components/items/items.component';
     app_routing
   ],
   providers: [
-    InformacionService
+    InformacionService,
+    ProductosService
   ],
   bootstrap: [AppComponent]
 })
