@@ -17,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortafolioComponent } from './components/portafolio/portafolio.component';
 import { AboutComponent } from './components/about/about.component';
 import { ItemsComponent } from './components/items/items.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -27,7 +28,8 @@ import { ItemsComponent } from './components/items/items.component';
     FooterComponent,
     PortafolioComponent,
     AboutComponent,
-    ItemsComponent
+    ItemsComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
