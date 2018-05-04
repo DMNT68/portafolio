@@ -19,17 +19,17 @@ export class ItemsComponent {
  
   constructor(private route: ActivatedRoute,
     private _ps: ProductosService,
-  private _is: InformacionService) {
+    private _is: InformacionService) {
 
     route.params.subscribe(parametros => {
       // console.log(parametros);
-      console.log(parametros['id']);
+     // console.log(parametros['id']);
 
       _ps.cargar_producto(parametros['id']).subscribe(
         res => {
           this.cod = parametros['id'];
           this.producto = res.json();
-          console.log(this.producto);
+        //  console.log(this.producto);
         });
     });
   }
